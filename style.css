@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 50vw;
+    height: 40vh;
+}
+
+.main {
+    width: 100%;
+    min-height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#result {
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 5px;
+
+    background-color: lightgrey;
+}
+
+.wrap__button {
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wrap__button div {
+    padding: 5px;
+    margin: 0px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.wrap__button div:hover {
+    background-color: lightgrey;
+}
