@@ -40,7 +40,7 @@ button.onclick = function(){
 
     function generate__emote() {
         if (data.indexOf("\n") >= 0) {
-            data = data.replace('\n', `\\nemote `);
+            data = data.replace('\n', ` \\nemote `);
             return generate__emote();
         } else {
             document.getElementById('result').innerHTML = data;
@@ -49,7 +49,7 @@ button.onclick = function(){
 
     function generate__say() {
         if (data.indexOf("\n") >= 0) {
-            data = data.replace('\n', `\\nsay `);
+            data = data.replace('\n', ` \\nsay `);
             return generate__say();
         } else {
             document.getElementById('result').innerHTML = data;
@@ -58,7 +58,7 @@ button.onclick = function(){
 
     function generate__looc() {
         if (data.indexOf("\n") >= 0) {
-            data = data.replace('\n', `\\nlooc `);
+            data = data.replace('\n', ` \\nlooc `);
             return generate__looc();
         } else {
             document.getElementById('result').innerHTML = data;
