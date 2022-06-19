@@ -18,7 +18,7 @@ button.onclick = function(){
         if (option[i].checked) {
             switch (option[i].value) {
                 case 'emote':
-                    data = 'emote' + data;
+                    data = 'me' + data;
                     generate__emote();
                 break;
 
@@ -40,7 +40,7 @@ button.onclick = function(){
 
     function generate__emote() {
         if (data.indexOf("\n") >= 0) {
-            data = data.replace('\n', ` \\nemote `);
+            data = data.replace('\n', ` \\nme `);
             return generate__emote();
         } else {
             document.getElementById('result').innerHTML = data;
